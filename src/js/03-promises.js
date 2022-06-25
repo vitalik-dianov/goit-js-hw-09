@@ -1,5 +1,4 @@
 const formRef = document.querySelector('.form');
-formRef.addEventListener('submit', generatorPromise);
 
 function generatorPromise(event) {
   event.preventDefault();
@@ -26,3 +25,5 @@ function createPromise(position, delay) {
     }, delay);
   });
 }
+
+formRef.addEventListener('submit', generatorPromise);
